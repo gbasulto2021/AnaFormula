@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(182, 194, 182);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.formula{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+legend{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+label{
+    font-family: sans-serif;
+}
+
+.btn-calcular{
+    width: 100px;
+    align-self: center;
+    color: rgb(2, 29, 3);
+    font-weight: bold;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-calcular:hover{
+    background-color: rgb(37, 95, 37);
+    color: #fff;
+    cursor: pointer;
+}
+
+ .formulario__input-error{
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: rgb(241, 11, 11);
+    visibility: hidden;
+}
+
+.formulario__input-error-activo{
+    visibility: visible;
+}
+
+.campo-correcto{
+   border: 2px solid rgb(56, 134, 73);
+}
+
+.campo-incorrecto{
+    border: 2px solid rgb(241, 11, 11);
+    
+}
+
+.campo-incorrecto legend{
+    color:rgb(241, 11, 11);
+}
+
