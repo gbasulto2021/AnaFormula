@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(182, 194, 182);
+    background-color:rgb(166, 182, 165);
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 
 h1{
@@ -11,26 +12,32 @@ h1{
 }
 
 .formula{
-    max-width: 800px;
-    width: 90%;
+    max-width: 1200px;
+    width: 95%;
     margin: auto;
     padding: 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
 }
 
 .formulario{
-    width: 90%;
+    margin-right: 20px;
+    width: 350px;
+    min-width: 225px;
     display: flex;
     flex-direction: column;
     
 }
 
+.resultado{
+    width: 350px;
+    min-width: 300px ;
+}
+
 legend{
     margin-bottom: 10px;
     font-weight: 700;
+    text-align: center;
 }
 label{
     font-family: sans-serif;
@@ -42,21 +49,23 @@ label{
     color: rgb(2, 29, 3);
     font-weight: bold;
     padding: 3px;
-    border: none;
+    border: 1px solid rgb(166, 182, 165);
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 .btn-calcular:hover{
-    background-color: rgb(37, 95, 37);
+    background-color: rgb(78, 139, 78);
     color: #fff;
     cursor: pointer;
+    
 }
 
  .formulario__input-error{
-    font-size: 1rem;
-    margin-bottom: 0;
+    font-size: 0.6rem;
+    margin-bottom: 5px;
     margin-top: 5px;
-    color: rgb(241, 11, 11);
+    color: rgb(173, 8, 8);
     visibility: hidden;
 }
 
@@ -64,16 +73,25 @@ label{
     visibility: visible;
 }
 
-.campo-correcto{
+/* .campo-correcto{
    border: 2px solid rgb(56, 134, 73);
-}
+} */
 
-.campo-incorrecto{
+/* .campo-incorrecto{
     border: 2px solid rgb(241, 11, 11);
     
-}
+} */
 
 .campo-incorrecto legend{
     color:rgb(241, 11, 11);
+}
+
+.result {
+    font-weight: 700;
+}
+
+
+.probabilidad-impago > p, tr{
+    font-family: sans-serif;
 }
 

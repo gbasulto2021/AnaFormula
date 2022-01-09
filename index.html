@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <title>Formula</title>
-</head>
-<body>
-    <header>
-        <h1>Formula</h1>
-    </header>
+  </head>
+  <body>
     <section class="formula">
-        <form class="formulario" id="formulario">
-            <fieldset class="ubicacion">
-              <legend>Elige la ubicacion Laboral</legend>
-              <div class="formulario__grupo" id="grupo__ubicacion">
-                <input type="radio" name="UL" id="ULCentro" value="0"/>
-                <label for="ULCentro"> Centro </label>
-                <input type="radio" name="UL" id="ULContornos" value="1"/>
-                <label for="ULContornos"> Contornos </label>
-              </div>
-              <p class="formulario__input-error">Debe seleccionar una ubicaci&oacuten laboral</p>
-            </fieldset>
-            <fieldset  class="experiencia">
-              <legend>Años de experiencia</legend>
-              <div class="formulario__grupo" id="grupo__experiencia">
-                <input
+      <form class="formulario" id="formulario">
+        <fieldset>
+          <legend>Datos</legend>
+          <div class="ubicacion">
+            <legend>Elige la ubicaci&oacuten Laboral</legend>
+            <div class="formulario__grupo" id="grupo__ubicacion">
+              <input type="radio" name="UL" id="ULCentro" value="0" />
+              <label for="ULCentro">Centro </label>
+              <br />
+              <input type="radio" name="UL" id="ULContornos" value="1" />
+              <label for="ULContornos">Contornos</label>
+            </div>
+            <p class="formulario__input-error">
+              * Debe seleccionar una ubicaci&oacuten laboral
+            </p>
+          </div>
+          <div class="experiencia">
+            <legend>Años de experiencia</legend>
+            <div class="formulario__grupo" id="grupo__experiencia">
+              <input
                 type="number"
                 step="any"
                 name="experiencia"
                 id="experiencia"
                 min="0"
                 max="70"
-                />
-              </div>
-              <p class="formulario__input-error">Campo inv&aacutelido</p>
-            </fieldset>
-            <fieldset class="capago">
-              <legend>Capacidad de pago</legend>
-              <div class="formulario__grupo" id="grupo__capago">
+              />
+            </div>
+            <p class="formulario__input-error">* Campo inv&aacutelido</p>
+          </div>
+          <div class="capago">
+            <legend>Capacidad de pago</legend>
+            <div class="formulario__grupo" id="grupo__capago">
               <input
                 type="number"
                 name="capacpag"
@@ -51,48 +56,49 @@
                 step="any"
                 min="0"
               />
-              
-              </div>
-              <p class="formulario__input-error">Campo inv&aacutelido</p>
-            </fieldset>
-            <fieldset class="resFamiliar">
-              <legend>Elige su Responsabilidad Familiar</legend>
-              <div class="formulario__grupo" id="grupo__resramiliar">
-                <input type="radio" name="cargaF" id="cargaFCero" value="0" />
-                <label for="cargaFCero"> 0 a 2 personas dependientes </label>
-                <input type="radio" name="cargaF" id="cargaFUno" value="1" />
-                <label for="cargaFUno"> 3 o mas personas dependientes </label>
-              </div>
+            </div>
+            <p class="formulario__input-error">* Campo inv&aacutelido</p>
+          </div>
+          <div class="resFamiliar">
+            <legend>Elija su Responsabilidad Familiar</legend>
+            <div class="formulario__grupo" id="grupo__resramiliar">
+              <input type="radio" name="cargaF" id="cargaFCero" value="0" />
+              <label for="cargaFCero"> 0 a 2 personas dependientes </label>
+              <br />
+              <input type="radio" name="cargaF" id="cargaFUno" value="1" />
+              <label for="cargaFUno"> 3 o mas personas dependientes </label>
+            </div>
 
-              <p class="formulario__input-error">Debe seleccionar una responsabilidad familiar</p>
-            </fieldset>
-            <fieldset class="otrosingresos">
-              <legend>Otros Ingresos</legend>
-              <div class="formulario__grupo" id="grupo__otrosingresos">
+            <p class="formulario__input-error">
+              * Debe seleccionar una responsabilidad familiar
+            </p>
+          </div>
+          <div class="otrosingresos">
+            <legend>Otros Ingresos</legend>
+            <div class="formulario__grupo" id="grupo__otrosingresos">
+              <input
+                type="number"
+                name="otrosIng"
+                id="otrosIng"
+                step="any"
+                min="0"
+              />
+            </div>
 
-                <input
-                  type="number"
-                  name="otrosIng"
-                  id="otrosIng"
-                  step="any"
-                  min="0"
-                />
-              </div>
-              
-              <p class="formulario__input-error">Campo inv&aacutelido</p>
-            </fieldset>
-            <fieldset class="escolaridad">
-              <legend>Escolaridad</legend>
-              <div class="formulario__grupo" id="grupo_escolaridad">
+            <p class="formulario__input-error">* Campo inv&aacutelido</p>
+          </div>
+          <div class="escolaridad">
+            <legend>Escolaridad</legend>
+            <div class="formulario__grupo" id="grupo_escolaridad">
+              <input
+                type="radio"
+                name="escolaridad"
+                id="escolaridadCero"
+                value="0"
+              />
 
-                <input
-                  type="radio"
-                  name="escolaridad"
-                  id="escolaridadCero"
-                  value="0"
-                />
-              
               <label for="escolaridadCero"> No Nivel Superior </label>
+              <br />
               <input
                 type="radio"
                 name="escolaridad"
@@ -101,43 +107,87 @@
               />
               <label for="escolaridadUno"> Nivel Superior </label>
             </div>
-            <p class="formulario__input-error">Debe seleccionar nivel de escolaridad</p>
-            </fieldset>
-            <fieldset class="tasa">
-              <legend>Tasa</legend>
-              <div class="formulario__grupo" id="grupo_tasa">
+            <p class="formulario__input-error">
+              * Debe seleccionar nivel de escolaridad
+            </p>
+          </div>
+          <div class="tasa">
+            <legend>Tasa</legend>
+            <div class="formulario__grupo" id="grupo_tasa">
+              <input
+                type="number"
+                name="tasa"
+                id="tasa"
+                step="any"
+                min="4.25"
+                max="35"
+              />
+            </div>
+            <p class="formulario__input-error">* Campo inv&aacutelido</p>
+          </div>
+          <div class="garantia">
+            <legend>Garant&iacutea</legend>
+            <div class="formulario__grupo" id="grupo_garantia">
+              <input type="radio" name="garantia" id="garantiaCero" value="0" />
+              <label for="garantiaCero"> Garant&iacutea Reales </label>
+              <br />
+              <input type="radio" name="garantia" id="garantiaUno" value="1" />
+              <label for="garantiaUno"> Respaldo Colateral </label>
+            </div>
+            <p class="formulario__input-error">
+              * Debe seleccionar una garant&iacutea
+            </p>
+          </div>
+        </fieldset>
 
-                <input
-                  type="number"
-                  name="tasa"
-                  id="tasa"
-                  step="any"
-                  min="4.25"
-                  max="35"
-                />
-              </div>
-                <p class="formulario__input-error">Campo inv&aacutelido</p>
-            </fieldset>
-            <fieldset class="garantia">
-              <legend>Garantia</legend>
-              <div class="formulario__grupo" id="grupo_garantia">
+        <button type="submit" class="btn-calcular">Calcular</button>
+      </form>
+      <div class="resultado">
+        <fieldset class="probabilidad">
+          <legend>Resultados</legend>
 
-                <input type="radio" name="garantia" id="garantiaCero" value="0" />
-                <label for="garantiaCero"> Garantia Reales </label>
-                <input type="radio" name="garantia" id="garantiaUno" value="1" />
-                <label for="garantiaUno"> Respaldo Colateral </label>
-              </div>
-              <p class="formulario__input-error">Debe seleccionar una garant&iacutea</p>
-            </fieldset>
-            <br />
-            
-            <button type="submit" class="btn-calcular">Calcular</button>
-          </form>
-          <div class="resultado">
+          <table>
+            <tr>
+              <td class="result resultado__ubicacion">Ubicaci&oacuten:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__experiencia">Años:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__capa">Capacidad:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__resp">Res. Familiar:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__ing">O. Ingresos:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__escol">Escolaridad:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__tasa">Tasa:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="result resultado__garantia">Garant&iacutea:</td>
+              <td></td>
+            </tr>
+          </table>
+          <br />
+          <div class="probabilidad-impago">
             <p></p>
           </div>
+        </fieldset>
+      </div>
     </section>
-  
+
     <script src="/main.js"></script>
-</body>
+  </body>
 </html>
